@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body class="bd">
+            <div class="container">
+                <form id="form">
+                    <div class="field">
+                        <label>User name:</label>
+                        <input type="text" id="fname" placeholder="Menna kotb">
+                        <p class="fmessage"></p>
+                    </div>
+
+
+                    <div class="field">
+                        <label>Phone number:</label>
+                        <input type="text" id="phone" placeholder="010********">
+                        <p class="phonenum"></p>
+                    </div>
+
+                   
+
+                    <div class="field">
+                        <label>Email:</label>
+                        <input type="email" id="email"placeholder="mm@gmail.com">
+                        <p class="email"></p>
+                    </div>
+
+                    <div class="row">
+                        <div class="x field">
+                            <label>Password:</label>
+                            <input type="password" id="password" placeholder="*******">
+                            <p class="pass"></p>
+                        </div>
+
+                        <div class="x field">
+                            <label>Confirm password:</label>
+                            <input type="password" id="confirm" placeholder="*******">
+                            <p class="confpass"></p>
+                        </div>
+                    </div>
+
+                    <button type="submit">submit</button>
+
+                </form>
+            </div>
+
+            <script src="./java.js"></script>
+    </body>
+</html>
