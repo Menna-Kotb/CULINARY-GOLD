@@ -1,0 +1,61 @@
+/* for login */
+
+:root {
+    --dark-background: #12151a;
+    --light-background: #1c1d22;
+    --gold-font: #eacc96;
+    --light-font: #9e947d;
+    --spetial-card: #0f2a30;
+    --special-color:#c9a227;
+}
+body {
+    background-color: var(--light-background);
+}
+.animation::after {
+    content: "C|";
+    animation-name: text;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    font-weight: bold;
+    color: var(--gold-font);
+    font-size: 2rem;
+}
+
+@keyframes text {
+    0% {
+        content: "CULI|"
+    }
+
+    25% {
+        content: "CULINARY|";
+    }
+
+    50% {
+        content: "CULINARY GOLD|"
+    }
+}
+
+form{
+    background-color: var(--dark-background);
+    border: 1px solid var(--gold-font);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 20px white;
+}
+
+.valid {
+    color: green;
+}
+
+.noValid {
+    color: red;
+}
+.btn{
+    background-color: var(--special-color);
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}

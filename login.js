@@ -50,12 +50,12 @@ let password = document.querySelector("#password");
 let passMsg = document.querySelector(".pass");
 
 password.addEventListener("input", () => {
-    let passRegex = /^[A-Za-z\d]{8}$/;
+    let passRegex = /^[A-Za-z\d]{8,}$/;
 
     if (passRegex.test(password.value)) {
         passMsg.innerHTML = `<span class="valid"><i class="fa-regular fa-circle-check"></i> Strong password</span>`;
     } else {
-        passMsg.innerHTML = `<span class="noValid"><i class="fa-regular fa-circle-xmark"></i> Password must be exactly 8 letters or numbers</span>`;
+        passMsg.innerHTML = `<span class="noValid"><i class="fa-regular fa-circle-xmark"></i>more than 8</span>`;
     }
 });
 
@@ -66,7 +66,7 @@ confirm.addEventListener("input", () => {
     if (confirm.value === password.value && confirm.value !== "") {
         confirmMsg.innerHTML = `<span class="valid"><i class="fa-regular fa-circle-check"></i> Password matched</span>`;
     } else {
-        confirmMsg.innerHTML = `<span class="noValid"><i class="fa-regular fa-circle-xmark"></i> Password not matched</span>`;
+        confirmMsg.innerHTML = `<span class="noValid"><i class="fa-regular fa-circle-xmark"></i> not matched</span>`;
     }
 });
 
