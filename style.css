@@ -106,7 +106,7 @@ h1{
 }
 
 .btn-gold {
-    background-color: var(--gold-font);
+    background-color: #c5ae82;
     color: #000;
     padding: 10px 25px;
     border-radius: 4px;
@@ -318,6 +318,7 @@ iframe{
     font-size: 30px;
     padding: 20px;
     color: #caa24d;
+    text-shadow: 6px 6px 10px black;
 }
 ul{
     list-style: none;
@@ -359,9 +360,11 @@ h3{
     height: 130px;
     margin:10px;
     border-radius: 20px;
+    box-shadow: 6px 6px 20px black;
 }
 .cart :hover{
     border:1px solid  #caa24d;
+    
 }
 ul li {
     display: flex;
