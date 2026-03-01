@@ -59,3 +59,8 @@ form{
     text-decoration: none;
     color: white;
 }
+.checkbox{
+    height: 100px;
+    width: 100px;
+    overflow-y: scroll;
+}

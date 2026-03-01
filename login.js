@@ -11,7 +11,6 @@ fname.addEventListener("input", () => {
         fmessage.innerHTML = `
             <span class="noValid"><i class="fa-regular fa-circle-xmark"></i> Must start with capital letter</span><br>
             <span class="noValid"><i class="fa-regular fa-circle-xmark"></i> Only letters</span><br>
-            <span class="noValid"><i class="fa-regular fa-circle-xmark"></i> No spaces</span><br>
             <span class="noValid"><i class="fa-regular fa-circle-xmark"></i> More than 2 letters</span>
         `;
     }
@@ -55,7 +54,7 @@ password.addEventListener("input", () => {
     if (passRegex.test(password.value)) {
         passMsg.innerHTML = `<span class="valid"><i class="fa-regular fa-circle-check"></i> Strong password</span>`;
     } else {
-        passMsg.innerHTML = `<span class="noValid"><i class="fa-regular fa-circle-xmark"></i>more than 8</span>`;
+        passMsg.innerHTML = `<span class="noValid"><i class="fa-regular fa-circle-xmark"></i>more than 7</span>`;
     }
 });
 
